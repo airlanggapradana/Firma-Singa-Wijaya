@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import "@/styles/globals.css";
 
 import { type Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Poppins, Playfair_Display } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "Law Firm",
@@ -12,18 +12,29 @@ export const metadata: Metadata = {
 
 const poppins = Poppins({
   subsets: ["latin"],
-  variable: "--font-poppins",
+  variable: "--font-sans",
   weight: ["400", "500", "600", "700"],
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-serif",
 });
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${poppins.variable}`} suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${poppins.variable} ${playfair.variable}`}
+      suppressHydrationWarning
+    >
       <body>
-        <Navbar />
-        {children}
+        <main>
+          <Navbar />
+          {children}
+        </main>
       </body>
     </html>
   );
