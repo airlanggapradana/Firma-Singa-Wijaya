@@ -3,6 +3,8 @@ import { Button } from "./ui/button";
 import Image from "next/image";
 import { ChevronRight, Search } from "lucide-react";
 import { SearchCaseBar } from "./SearchCaseBar";
+import foto1 from "../../public/WhatsApp Image 2025-05-12 at 17.20.16_0f815034.webp";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -12,7 +14,7 @@ const Hero = () => {
     >
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          src={foto1}
           alt="Law firm office"
           fill
           className="object-cover brightness-50"
@@ -34,7 +36,9 @@ const Hero = () => {
             size="lg"
             className="bg-amber-700 text-white hover:bg-amber-800"
           >
-            Schedule Consultation
+            <Link href={"https://wa.me/+628122625521"} target="_blank">
+              Schedule Consultation
+            </Link>
           </Button>
           <Button size="lg" variant="outline">
             Learn More <ChevronRight className="ml-2 h-4 w-4" />

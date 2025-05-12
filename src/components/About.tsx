@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 import { Button } from "./ui/button";
+import foto2 from "../../public/IMG-20250512-WA0017.webp";
 
 const About = () => {
   return (
@@ -21,10 +22,10 @@ const About = () => {
           </h2>
           <div className="mx-auto mb-6 h-1 w-20 bg-amber-700"></div>
           <p className="mx-auto max-w-3xl text-slate-600">
-            Founded in 1995, Justice Law has been providing exceptional legal
-            services to clients across the country. Our commitment to excellence
-            and client satisfaction has made us one of the most respected law
-            firms.
+            Founded in 1995, Firma Singa Wijaya has been providing exceptional
+            legal services to clients across the country. Our commitment to
+            excellence and client satisfaction has made us one of the most
+            respected law firms.
           </p>
         </motion.div>
 
@@ -34,13 +35,13 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            className="flex h-[35rem] w-full items-center justify-center overflow-hidden rounded-lg shadow-lg"
           >
             <Image
-              src="https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src={foto2}
               alt="Law firm team"
-              width={800}
-              height={600}
-              className="rounded-lg shadow-lg"
+              priority
+              className="rounded-lg object-contain object-center shadow-lg"
             />
           </motion.div>
 

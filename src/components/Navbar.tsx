@@ -30,7 +30,7 @@ const Navbar = () => {
         <Link href="/" className="flex items-center space-x-2">
           <Scale className="h-8 w-8 text-amber-700" />
           <span className="font-serif text-2xl font-bold text-white">
-            JUSTICE LAW
+            Firma Singa Wijaya
           </span>
         </Link>
 
@@ -47,7 +47,9 @@ const Navbar = () => {
             ),
           )}
           <Button variant="default" className="bg-amber-700 hover:bg-amber-800">
-            Free Consultation
+            <Link href={"https://wa.me/+628122625521"} target="_blank">
+              Free Consultation
+            </Link>
           </Button>
         </nav>
 
