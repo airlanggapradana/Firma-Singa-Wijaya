@@ -1,7 +1,8 @@
 import React from "react";
 import { Button } from "./ui/button";
 import Image from "next/image";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Search } from "lucide-react";
+import { SearchCaseBar } from "./SearchCaseBar";
 
 const Hero = () => {
   return (
@@ -38,6 +39,13 @@ const Hero = () => {
           <Button size="lg" variant="outline">
             Learn More <ChevronRight className="ml-2 h-4 w-4" />
           </Button>
+        </div>
+
+        <div className="mt-10 space-y-5">
+          <SearchCaseBar />
+          <p className="text-sm font-medium text-white/90">
+            Search our database of over 10+ successfully handled cases
+          </p>
         </div>
       </div>
     </section>
