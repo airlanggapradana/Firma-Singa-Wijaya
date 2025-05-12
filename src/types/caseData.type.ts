@@ -14,6 +14,7 @@ export interface CourtCase {
   case_id: string;
   case_title: string;
   case_type: string;
+  summary: string;
   filing_date: string;
   court: Court;
   parties: Party[];
@@ -22,7 +23,7 @@ export interface CourtCase {
   judge: string;
   next_hearing?: string;
   settlement_amount?: number;
-  outcome?: string;
+  outcome: string;
   original_case?: string;
   next_review?: string;
 }

@@ -6,6 +6,10 @@ export const caseData: CourtCase[] = [
     case_title: "State v. Johnson",
     case_type: "Criminal",
     filing_date: "2023-01-15",
+    summary:
+      "First-degree murder case against defendant Michael Johnson, with the State represented by the Attorney General and the defendant by a public defender.",
+    outcome:
+      "Pending jury trial - Prosecution seeking life without parole; defense argues mistaken identity",
     court: {
       name: "Supreme Court",
       jurisdiction: "State",
@@ -33,6 +37,10 @@ export const caseData: CourtCase[] = [
     case_title: "Doe v. ABC Corporation",
     case_type: "Civil",
     filing_date: "2022-11-03",
+    summary:
+      "Employment discrimination and wrongful termination lawsuit settled for $250,000 between plaintiff Jane Doe and corporate defendant.",
+    outcome:
+      "Settled with confidentiality agreement - Defendant required to implement diversity training programs",
     court: {
       name: "District Court",
       jurisdiction: "Federal",
@@ -60,6 +68,10 @@ export const caseData: CourtCase[] = [
     case_title: "In re: Peterson Marriage",
     case_type: "Family",
     filing_date: "2023-02-28",
+    summary:
+      "Contested divorce proceeding involving child custody disputes between Sarah and David Peterson.",
+    outcome:
+      "Pending mediation - Temporary orders grant joint custody with primary residence to mother",
     court: {
       name: "Family Court",
       jurisdiction: "County",
@@ -87,6 +99,10 @@ export const caseData: CourtCase[] = [
     case_title: "First Bank v. TechStart Inc.",
     case_type: "Bankruptcy",
     filing_date: "2021-09-12",
+    summary:
+      "Chapter 11 bankruptcy reorganization case where TechStart Inc. successfully negotiated terms with primary creditor First National Bank.",
+    outcome:
+      "Reorganization plan approved - 60% debt forgiveness with 5-year repayment schedule for remaining balance",
     court: {
       name: "Bankruptcy Court",
       jurisdiction: "Federal",
@@ -106,7 +122,6 @@ export const caseData: CourtCase[] = [
     ],
     charges: ["Chapter 11 bankruptcy"],
     status: "Closed",
-    outcome: "Reorganization approved",
     judge: "Hon. Richard Stone",
   },
   {
@@ -114,6 +129,10 @@ export const caseData: CourtCase[] = [
     case_title: "State v. Martinez",
     case_type: "Appeal",
     filing_date: "2023-03-05",
+    summary:
+      "Appeal of robbery conviction by defendant Carlos Martinez, challenging evidentiary rulings from the original trial.",
+    outcome:
+      "Pending appellate review - Appellant argues key evidence was obtained through unconstitutional search",
     court: {
       name: "Appellate Court",
       jurisdiction: "State",
@@ -142,6 +161,10 @@ export const caseData: CourtCase[] = [
     case_title: "Green v. State",
     case_type: "Habeas Corpus",
     filing_date: "2023-01-30",
+    summary:
+      "Post-conviction habeas corpus petition filed by Thomas Green with assistance from the Innocence Project, alleging wrongful conviction.",
+    outcome:
+      "Pending DNA evidence review - Court ordered retesting of crime scene materials",
     court: {
       name: "Supreme Court",
       jurisdiction: "State",
@@ -169,6 +192,10 @@ export const caseData: CourtCase[] = [
     case_title: "Smith v. Jones",
     case_type: "Personal Injury",
     filing_date: "2023-02-14",
+    summary:
+      "Personal injury lawsuit alleging negligence by defendant Alex Jones caused significant harm to plaintiff Emily Smith.",
+    outcome:
+      "Pending discovery - Plaintiff seeks $1.2M in damages for medical expenses and lost wages",
     court: {
       name: "District Court",
       jurisdiction: "State",
@@ -196,6 +223,10 @@ export const caseData: CourtCase[] = [
     case_title: "City v. Landmark Properties",
     case_type: "Tax",
     filing_date: "2022-08-22",
+    summary:
+      "Property tax valuation dispute where Landmark Properties successfully challenged the city's assessment of commercial property.",
+    outcome:
+      "Judgment for defendant - Property valuation reduced by 40%, resulting in $280,000 tax refund",
     court: {
       name: "Tax Court",
       jurisdiction: "State",
@@ -215,7 +246,6 @@ export const caseData: CourtCase[] = [
     ],
     charges: ["Property tax dispute"],
     status: "Decided",
-    outcome: "Ruled for defendant",
     judge: "Hon. William Numbers",
   },
   {
@@ -223,6 +253,10 @@ export const caseData: CourtCase[] = [
     case_title: "In re: J.D. (a minor)",
     case_type: "Juvenile",
     filing_date: "2023-02-01",
+    summary:
+      "Juvenile truancy case where minor J.D. was placed in a diversion program rather than facing formal adjudication.",
+    outcome:
+      "Diversion program successful - Attendance improved to 95% with counseling and mentoring",
     court: {
       name: "Juvenile Court",
       jurisdiction: "County",
@@ -250,6 +284,10 @@ export const caseData: CourtCase[] = [
     case_title: "ACLU v. State of Example",
     case_type: "Constitutional",
     filing_date: "2023-01-10",
+    summary:
+      "Landmark First Amendment challenge brought by the ACLU against a state law restricting public demonstrations.",
+    outcome:
+      "Pending oral arguments - Potential to overturn state law as unconstitutional",
     court: {
       name: "Supreme Court",
       jurisdiction: "State",

@@ -19,10 +19,13 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { caseData } from "@/data/court_cases_by_ai";
+import { format } from "date-fns";
+import { useRouter } from "next/navigation";
 
 export function SearchCaseBar() {
   const [open, setOpen] = React.useState(false);
   const [value, setValue] = React.useState("");
+  const router = useRouter();
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
@@ -52,19 +55,25 @@ export function SearchCaseBar() {
                   onSelect={(currentValue) => {
                     setValue(currentValue === value ? "" : currentValue);
                     setOpen(false);
+                    router.push(`/case/${item.case_id}`);
                   }}
-                  className="flex flex-col items-start gap-1 font-semibold"
+                  className="font-semibold"
                 >
-                  {item.case_title}
-                  {item.charges.map((charge, index) => (
-                    <span
-                      key={index}
-                      className="text-sm font-light text-gray-500"
-                    >
-                      {charge}
-                      {index < item.charges.length - 1 ? ", " : ""}
-                    </span>
-                  ))}
+                  <div className="flex flex-col gap-1">
+                    {item.case_title}
+                    {item.charges.map((charge, index) => (
+                      <span
+                        key={index}
+                        className="text-sm font-light text-gray-500"
+                      >
+                        {charge}
+                        {index < item.charges.length - 1 ? ", " : ""}
+                      </span>
+                    ))}
+                    <p className="text-sm font-light text-gray-400">
+                      {format(item.filing_date, "PP")}
+                    </p>
+                  </div>
                   <Check
                     className={cn(
                       "ml-auto",
